@@ -29,3 +29,55 @@ color: #116363;
 .positionmacaws{
   position:absolute; top: 343px; left: 943px;
 }
+.menubtn{
+  
+  margin: 40px;
+  list-style: none;
+  margin: 52px 2px;
+  
+}
+a{
+text-decoration: none;
+
+}
+
+.menubtn a{
+  color: #fff;
+  padding: 10px 35px;
+}
+
+.logo{
+  margin:42px 0;
+}
+
+.nav {
+  justify-content: space-between;
+  
+  padding: 0px 15%;
+  position: relative;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex{
+  display: flex;
+  
+}
+.banner__position{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  height: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+header{
+  height: 800px;
+}
