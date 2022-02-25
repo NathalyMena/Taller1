@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  color: #646464;
+}
+
+.service__number{
+  color: #00AD84;
+  opacity: 0.09;
+
+}
+.service__title{
+color: #116363;
+
+}
+  .principalservices__title{
+    color: #007A7A    ;
+  }
+
+.whitefont{
+  color: #fff;
+}
+.motivating{
+  background-color: #116363;  
+}
+.positionmacaws{
+  position:absolute; top: 343px; left: 943px;
+}
