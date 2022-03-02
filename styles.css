@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 p{
   color: #646464;
 }
@@ -33,7 +37,7 @@ color: #116363;
   
   margin: 40px;
   list-style: none;
-  margin: 52px 2px;
+  margin: 52px 15px;
   
 }
 a{
@@ -44,16 +48,20 @@ text-decoration: none;
 .menubtn a{
   color: #fff;
   padding: 10px 35px;
+  background-color: rgba(90, 90, 90, 0.1);
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 5px rgb(192, 192, 192);
 }
 
+
 .logo{
-  margin:42px 0;
+  margin:30px 0;
 }
 
 .nav {
-  justify-content: space-between;
-  
-  padding: 0px 15%;
+  justify-content: space-between;  
+  padding: 0px 10%;
   position: relative;
 }
 .align-items-center {
@@ -81,3 +89,35 @@ body {
 header{
   height: 800px;
 }
+
+.cuadrado {
+  background-color: rgba(48, 48, 48, 0.1);
+  backdrop-filter: blur(5px);
+  width:41%;
+  height:730px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner__text{
+  position:absolute; top: 607px; left: 149px;
+}
+
+.banner__vertical{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-top: 150px;
+  margin-left: 78px;
+  font-size: small;
+
+}
+
+.line{
+  height: 0.5px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(90deg);
+  position: absolute; top: 234px; left: 102px;
+}
+
