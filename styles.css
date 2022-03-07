@@ -20,9 +20,12 @@ p{
 color: #116363;
 
 }
-  .principalservices__title{
-    color: #007A7A    ;
-  }
+
+.principalservices__title{
+  color: #007A7A    ;
+  padding: 0 73px 0 244px;
+}
+
 
 .whitefont{
   color: #fff;
@@ -133,4 +136,17 @@ header{
   color: #fff;
   position:absolute; top: 360px; left: 160px;
   
+}
+.flex__servicespg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.services_text{
+  padding: 0 339px 0 73px;
+}
+
+.principalservices{
+  margin: 5%;
 }
