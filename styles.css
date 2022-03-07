@@ -208,4 +208,19 @@ header{
 .motivating{
   background-color: #116363;  
   margin-top: 16%;
+  height: 397px
+}
+.flex__motivatingtext{
+  display: flex;
+  justify-content: center;
+  margin-top: 191px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.motivating__img{
+  position:absolute; top: 1708px; left: 0;
+
 }
