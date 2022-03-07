@@ -16,11 +16,6 @@ p{
   opacity: 0.09;
 
 }
-.service__title{
-color: #116363;
-padding: 0 200px 0 0;
-
-}
 
 .principalservices__title{
   color: #007A7A    ;
@@ -161,33 +156,34 @@ header{
 }
 .services{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-content: space-between;
-}
-.servicesone{
-  align-content: space-around;
+  margin-right: 13%;
 
+  
+}
+
+.service__title{
+  color: #116363;
+  padding-right: 50%;
+
+}
+
+.servicesone{
+  width: 35%;
+  margin-left: 262px;  
 }
 
 .servicestwo{
   padding-top: 15%;
-}
-
-.finalservices{
   padding-left: 5%;
+  padding-right: 5%;
+  width: 35%;  
 }
 
-.services{
-  margin-top: 0%;
-  margin-right: 15%;
-  margin-bottom: 0%;
-  margin-left: 15%;
-}
 .service__text1{
-  padding-right: 33%;
   margin-bottom: 6%;
   margin-top: 3%;
+  padding-right: 1%;
 }
 
 .service__title__padding{
@@ -195,7 +191,12 @@ header{
   padding-right: 10%;
 }
 .service__text2{
-  padding-right: 9%;
+
   margin-bottom: 9%;
   margin-top: 5%;
+}
+.service__text3{
+  padding-right: 30%;
+  margin-bottom: 6%;
+  margin-top: 3%;
 }
