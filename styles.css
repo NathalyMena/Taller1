@@ -18,12 +18,18 @@ p{
 }
 .service__title{
 color: #116363;
+padding: 0 150px 0 0;
 
 }
 
 .principalservices__title{
   color: #007A7A    ;
   padding: 0 73px 0 244px;
+}
+
+.service__title__padding{
+  color: #116363;
+  padding-right: 20%;
 }
 
 
@@ -162,19 +168,18 @@ header{
   justify-content: center;
   justify-content: space-between;
 }
-.servicesone{
-  padding: 5%;
-  padding: 0 74px 0 262px;
- 
-}
 
 .servicestwo{
-  padding: 5%;
+  padding-top: 15%;
 }
 
 .finalservices{
-  padding: 5%;;
+  padding-left: 5%;
 }
-.service__texto{
-  padding: 0 85px 0 0;
+
+.services{
+  margin-top: 0%;
+  margin-right: 15%;
+  margin-bottom: 0%;
+  margin-left: 15%;
 }
