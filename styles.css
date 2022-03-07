@@ -14,12 +14,13 @@ p{
 .service__number{
   color: #00AD84;
   opacity: 0.09;
+  font-size: 50px;
 
 }
 
 .principalservices__title{
   color: #007A7A    ;
-  padding: 0 73px 0 244px;
+  padding: 0 100px 0 244px;
 }
 
 
@@ -28,9 +29,7 @@ p{
 .whitefont{
   color: #fff;
 }
-.motivating{
-  background-color: #116363;  
-}
+
 .positionmacaws{
   position:absolute; top: 343px; left: 943px;
 }
@@ -91,7 +90,7 @@ body {
   margin-top: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+
 }
 
 header{
@@ -196,7 +195,17 @@ header{
   margin-top: 5%;
 }
 .service__text3{
-  padding-right: 30%;
+
   margin-bottom: 6%;
   margin-top: 3%;
+  padding-right: 30%;
+}
+
+.service__image{
+  position: absolute;
+}
+
+.motivating{
+  background-color: #116363;  
+  margin-top: 16%;
 }
