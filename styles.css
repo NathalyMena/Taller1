@@ -52,6 +52,7 @@ text-decoration: none;
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 5px rgb(192, 192, 192);
+
 }
 
 
@@ -110,7 +111,8 @@ header{
   transform: rotate(180deg);
   margin-top: 150px;
   margin-left: 78px;
-  font-size: small;
+  font-size: 14px;
+  opacity: 0.4;
 
 }
 
@@ -121,3 +123,14 @@ header{
   position: absolute; top: 234px; left: 102px;
 }
 
+.banner_title{
+  font-size: 600%;
+  color: #fff;
+  position:absolute; top: 237px; left: 264px;
+}
+.banner__title__size{
+  font-size: 600%;
+  color: #fff;
+  position:absolute; top: 360px; left: 160px;
+  
+}
