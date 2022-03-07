@@ -18,7 +18,7 @@ p{
 }
 .service__title{
 color: #116363;
-padding: 0 150px 0 0;
+padding: 0 200px 0 0;
 
 }
 
@@ -27,10 +27,7 @@ padding: 0 150px 0 0;
   padding: 0 73px 0 244px;
 }
 
-.service__title__padding{
-  color: #116363;
-  padding-right: 20%;
-}
+
 
 
 .whitefont{
@@ -166,7 +163,11 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-between;
+  align-content: space-between;
+}
+.servicesone{
+  align-content: space-around;
+
 }
 
 .servicestwo{
@@ -183,3 +184,10 @@ header{
   margin-bottom: 0%;
   margin-left: 15%;
 }
+.service__text1{
+  padding-right: 33%;
+  margin-bottom: 6%;
+  margin-top: 3%;
+}
+
+
