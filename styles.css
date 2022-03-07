@@ -190,4 +190,12 @@ header{
   margin-top: 3%;
 }
 
-
+.service__title__padding{
+  color: #116363;
+  padding-right: 10%;
+}
+.service__text2{
+  padding-right: 9%;
+  margin-bottom: 9%;
+  margin-top: 5%;
+}
