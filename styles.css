@@ -48,6 +48,12 @@ text-decoration: none;
 
 }
 
+ul {
+  list-style: none;
+}
+
+
+
 .menubtn a{
   color: #fff;
   padding: 10px 35px;
@@ -149,4 +155,26 @@ header{
 
 .principalservices{
   margin: 5%;
+}
+.services{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.servicesone{
+  padding: 5%;
+  padding: 0 74px 0 262px;
+ 
+}
+
+.servicestwo{
+  padding: 5%;
+}
+
+.finalservices{
+  padding: 5%;;
+}
+.service__texto{
+  padding: 0 85px 0 0;
 }
