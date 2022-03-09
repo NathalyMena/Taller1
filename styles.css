@@ -112,16 +112,6 @@ header{
   position:absolute; top: 607px; left: 149px;
 }
 
-.banner__vertical{
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  margin-top: 150px;
-  margin-left: 78px;
-  font-size: 14px;
-  opacity: 0.4;
-
-}
-
 .line{
   height: 0.5px;
   background-color: rgb(255, 255, 255);
@@ -324,4 +314,9 @@ footer{
 }
 .subscribe{
   padding-right: 55%;
+}
+.input {
+color: #fff;
+  margin: 8px 0;
+   
 }
