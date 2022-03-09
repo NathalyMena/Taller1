@@ -229,7 +229,7 @@ header{
     display: inline-block;
     text-align: start;
 }
-.gallery1__text{
+.gallery__text{
   position: absolute;
   top: 15%;
   left: 45%;
@@ -238,7 +238,7 @@ header{
   color: #fff;
   font-weight: 600;
 }
-.gallery1__subtitle{
+.gallery__subtitle{
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 
@@ -247,7 +247,7 @@ header{
   font-size: 80%;
   
   position: absolute;
-  top: 70%;
+  bottom: 15%;
   left: 18%;
 
 }
@@ -256,3 +256,23 @@ header{
   flex-direction: row;
  
 }
+
+.gallery2{
+  position: relative;
+    display: inline-block;
+    text-align: start;
+    
+}
+.gallery3{
+  position: relative;
+    display: inline-block;
+    text-align: start;
+    
+}
+.gallery4{
+  position: relative;
+    display: inline-block;
+    text-align: start;
+    
+}
+
