@@ -254,6 +254,7 @@ header{
 .gallery{
   display: flex;
   flex-direction: row;
+  height: 673px;
  
 }
 
@@ -276,3 +277,51 @@ header{
     
 }
 
+footer{
+  background-color: #050505;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.footer_info{
+  display: flex;
+  width: 100%;
+  padding-bottom: 25px;  
+}
+.data_logo{
+  padding-bottom: 20px;
+  padding-right: 120px;
+}
+.data_menu{
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+.data_menu a{
+  color: white;
+  font-size: 16px;  
+  padding-bottom: 16px;
+}
+.data_legal{
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.data_legal a{
+  float: left;
+  color: white;
+  font-size: 16px; 
+  padding-bottom: 16px;
+}
+.data_contact p{
+  color: white;
+  padding-top: 20px;
+}
+.titler_footer{
+  color: #fff;
+}
+.subscribe{
+  padding-right: 55%;
+}
