@@ -239,6 +239,7 @@ header{
   position: relative;
     display: inline-block;
     text-align: start;
+    width: 25%;
 
     
   
@@ -268,23 +269,21 @@ header{
 .gallery{
   display: flex;
   flex-direction: row;
-  height: auto;
-  max-width:30%;
-
-
- 
+  height: 600px; 
 }
 
 .gallery2{
   position: relative;
     display: inline-block;
     text-align: start;
+    width: 25%;
     
 }
 .gallery3{
   position: relative;
     display: inline-block;
     text-align: start;
+    width: 25%;
    
     
 }
@@ -292,7 +291,30 @@ header{
   position: relative;
     display: inline-block;
     text-align: start;
+    width: 25%;
     
+}
+
+.gallery4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.gallery2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.gallery3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.gallery1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 footer{
