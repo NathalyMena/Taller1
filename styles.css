@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -20,7 +21,10 @@ p{
 
 .principalservices__title{
   color: #007A7A    ;
-  padding: 0 100px 0 244px;
+  padding-top: 5%;
+  font-size: 2.5vw;
+  padding-left: 13%;
+  
 }
 
 
@@ -31,7 +35,9 @@ p{
 }
 
 .positionmacaws{
-  position:absolute; top: 343px; left: 943px;
+  position:absolute; top: 42%; left: 60%;
+  width: 40%;
+  height: auto;
 }
 .menubtn{
   
@@ -64,13 +70,18 @@ ul {
 
 .logo{
   margin:30px 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .nav {
   justify-content: space-between;  
-  padding: 0px 10%;
+  padding: 0px 5%;
   position: relative;
+
 }
+
 .align-items-center {
   align-items: center;
 }
@@ -83,6 +94,10 @@ ul {
   top: 0;
   left: 0;
   z-index: -1;
+
+  max-width:  100%;
+  height: auto;
+ 
 }
 
 body {
@@ -94,14 +109,14 @@ body {
 }
 
 header{
-  height: 800px;
+  margin-bottom: 40%;
 }
 
 .cuadrado {
   background-color: rgba(48, 48, 48, 0.1);
   backdrop-filter: blur(5px);
-  width:41%;
-  height:730px;
+  width:43%;
+  height:100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +124,7 @@ header{
 }
 
 .banner__text{
-  position:absolute; top: 607px; left: 149px;
+  position:absolute; top: 80%; left: 6%;
 }
 
 .line{
@@ -120,14 +135,14 @@ header{
 }
 
 .banner_title{
-  font-size: 600%;
+  font-size: 8vw;
   color: #fff;
-  position:absolute; top: 237px; left: 264px;
+  position:absolute; top: 35%; left: 15%;
 }
 .banner__title__size{
-  font-size: 600%;
+  font-size: 8vw;
   color: #fff;
-  position:absolute; top: 360px; left: 160px;
+  position:absolute; top: 53%; left: 6%;
   
 }
 .flex__servicespg{
@@ -137,7 +152,10 @@ header{
   justify-content: space-between;
 }
 .services_text{
-  padding: 0 339px 0 73px;
+  padding-top: 5%;
+  padding-right: 25%;
+  padding-left: 5%;
+  font-size: 1.4vw;
 }
 
 .principalservices{
@@ -159,13 +177,13 @@ header{
 
 .servicesone{
   width: 35%;
-  margin-left: 262px;  
+  margin-left: 13%;  
 }
 
 .servicestwo{
   padding-top: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
+ 
+  
   width: 35%;  
 }
 
@@ -173,6 +191,11 @@ header{
   margin-bottom: 6%;
   margin-top: 3%;
   padding-right: 1%;
+}
+
+.finalservices{
+  width: 35%;
+  margin-right: 5%; 
 }
 
 .service__title__padding{
@@ -191,9 +214,7 @@ header{
   padding-right: 30%;
 }
 
-.service__image{
-  position: absolute;
-}
+
 
 .motivating{
   background-color: #116363;  
@@ -218,6 +239,9 @@ header{
   position: relative;
     display: inline-block;
     text-align: start;
+
+    
+  
 }
 .gallery__text{
   position: absolute;
@@ -244,7 +268,10 @@ header{
 .gallery{
   display: flex;
   flex-direction: row;
-  height: 673px;
+  height: auto;
+  max-width:30%;
+
+
  
 }
 
@@ -258,6 +285,7 @@ header{
   position: relative;
     display: inline-block;
     text-align: start;
+   
     
 }
 .gallery4{
