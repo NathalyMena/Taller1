@@ -405,6 +405,27 @@ color: rgb(255, 255, 255);
   display: none;
 }
 
+.serviceone__img{
+  display: none;
+}
+.rescue{
+  display: none;
+}
+.hunting{
+  display: none;
+}
+.natural{
+  display: none;
+}
+.extincion{
+  display: none;
+}
+.ilegal{
+  display: none;
+}
+.area{
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .menubtn{
@@ -421,7 +442,29 @@ color: rgb(255, 255, 255);
   .banner__phone{
     display: none;
   }
+  .serviceone__img{
+    display: none;
+  }
+  .rescue{
+    display: none;
+  }
+  .hunting{
+    display: none;
+  }
+  .natural{
+    display: none;
+  }
+  .extincion{
+    display: none;
+  }
+  .ilegal{
+    display: none;
+  }
+  .area{
+    display: none;
+  }
 }
+
 
 @media only screen and (max-width: 420px) {
   .banner__position{ display: none;
@@ -429,7 +472,200 @@ color: rgb(255, 255, 255);
 
   .banner__phone{
     display: block;
+    max-width:  100%;
+    z-index: -1;
+ 
   }
+  .cuadrado{
+    display: none;
+  }
+  .positionmacaws{
+    display: none;
+  }
+  .banner_title{
+    position:absolute; top: 77%; left: 7%;
+    font-size: 8vw;
+  }
+  .banner__title__size{
+    position:absolute; top: 83%; left: 7%;
+    font-size: 8vw;  
+  }
+  .banner__text{
+    position:absolute; top: 90%; left: 7%;
+    font-size: 3vw;
+  }
+  .logo{
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .principalservices__title{
+    font-size: 4.5vw;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .flex__servicespg{
+    flex-direction: column;
+  }
+  .services_text{
+    font-size: 3vw;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .services{
+    flex-direction: column;
+    margin-right: 0%;
+  }
+  .service__number{
+    font-size:7vw;
+    padding-left: 1%;
+  }
+  .service__title{
+    font-size: 4.5vw;
+    padding-right: 0%;
+  }
+  .service__text1{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 70%;
+  }
+  .servicesone{
+   width: 95%;
+    margin-left: 8%; 
+  }
+  .responsive{ 
+    display: none;
+  }
+
+  .serviceone__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .service__title__padding{
+    font-size: 4.5vw;
+    padding-right: 0%;
+  }
+  .service__text2{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 70%;
+  }
+  .servicestwo{
+    width: 95%;
+    margin-left: 8%;
+
+  }
+  .ilegal{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .service__text3{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 70%;
+  }
+  .finalservices{
+    width: 95%;
+    margin-left: 8%;
+    margin-top: 15%;
+  }
+  .area{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .service__text3{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 70%;
+    padding-right: 0%;
+  }
+  .motivating__img{
+    display: none;
+  }
+  .flex__motivatingtext{
+    font-size: 3vw;
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+  .rescate{ 
+    display: none;
+  }
+
+  .rescue{
+    display: block;
+  }
+  .gallery{
+    flex-direction: column;
+  }
+  .gallery1{
+    width: 100%;
+  }
+  .delinquency{
+    display: none;
+  }
+  .hunting{
+    display: block;
+  }
+  .gallery2{
+    width: 100%;
+  }
+  .reserve{
+    display: none;
+  }
+  .natural{
+    display: block;
+  }
+  .gallery3{
+    width: 100%;
+  }
+  .species{
+    display: none;
+  }
+  .extincion{
+    display: block;
+  }
+  .gallery4{
+    width: 100%;
+  }
+  .gallery__subtitle{
+    display: none;
+  }
+  .gallery__text{
+    font-size: 3vw;
+    margin-top: 12%;
+    left:40%;
+  }
+  
+  .data_legal{
+    display: none;
+  }
+  .data_menu{
+    display: none;
+  }
+  .subscribe{
+  
+    padding-right: 0%;
+  }
+  .footer_info{
+    flex-direction: column;
+  }
+  .input{
+    margin-top: 3%;
+  }
+  .data_contact p{
+    font-size: 3vw;
+  }
+
 
 
 }
