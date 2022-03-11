@@ -43,8 +43,9 @@ p{
   
   margin: 40px;
   list-style: none;
-  margin: 52px 15px;
+ 
   width:100%;
+  margin: 40px 50px;
   
   
 }
@@ -58,14 +59,14 @@ ul {
 }
 
 
-
 .menubtn a{
   color: #fff;
-  padding: 10px 35px;
+  padding: 15% 60%;
   background-color: rgba(90, 90, 90, 0.1);
   border-radius: 25px;
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 5px rgb(192, 192, 192);
+ 
  
   
 
@@ -170,7 +171,7 @@ body {
 .services{
   display: flex;
   justify-content: center;
-  margin-right: 13%;
+  margin-right: 5%;
 
   
 }
@@ -260,6 +261,10 @@ body {
     text-align: start;
     width: 25%;
 
+
+    display: flex;
+    align-items: flex-start;
+
     
   
 }
@@ -292,6 +297,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 600px; 
+  
 }
 
 .gallery2{
@@ -299,6 +305,7 @@ body {
     display: inline-block;
     text-align: start;
     width: 25%;
+
     
 }
 .gallery3{
@@ -306,6 +313,7 @@ body {
     display: inline-block;
     text-align: start;
     width: 25%;
+ 
    
     
 }
@@ -314,7 +322,7 @@ body {
     display: inline-block;
     text-align: start;
     width: 25%;
-    
+
 }
 
 .gallery4 img{
@@ -391,4 +399,19 @@ width: 100%;
 color: rgb(255, 255, 255);
 
    
+}
+
+
+@media only screen and (max-width: 768px) {
+  .menubtn{
+    margin: 40px 30px;
+
+  }
+  .menubtn a{
+    font-size: 1.7vw;
+    padding: 15% 45%;
+  }
+  .nav{
+    padding: 0px 10%;
+  }
 }
