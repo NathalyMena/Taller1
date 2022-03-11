@@ -398,7 +398,11 @@ display: flex;
 width: 100%;
 color: rgb(255, 255, 255);
 
+
    
+}
+.banner__phone{
+  display: none;
 }
 
 
@@ -414,4 +418,20 @@ color: rgb(255, 255, 255);
   .nav{
     padding: 0px 10%;
   }
+  .banner__phone{
+    display: none;
+  }
 }
+
+@media only screen and (max-width: 420px) {
+  .banner__position{ display: none;
+  }
+
+  .banner__phone{
+    display: block;
+  }
+
+
+}
+
+
