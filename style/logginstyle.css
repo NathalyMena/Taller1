@@ -11,7 +11,7 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: small;
+    font-size: 1.2vw;
 }
 
 .backgroundpth {
@@ -39,14 +39,15 @@ a{
 
 .all {
     position: relative;
+    
 }
 
 .login {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25%;
-    left: 45%;
+   
+       
 }
 
 .padding {
@@ -54,7 +55,7 @@ a{
 }
 
 .input {
-    padding-left: 5%;
+    padding-left: 7%;
     padding-top: 7%;
     padding-bottom: 7%;
     width: 100%;
@@ -63,11 +64,15 @@ a{
     border-radius: 31px;
     border: none;
     outline: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 100;
 }
 
 .button {
-    width: 433px;
-    height: 73px;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
     left: 538px;
     top: 674px;
     background: #137070;
@@ -77,10 +82,11 @@ a{
     border: none;
     outline: none;
     color: white;
+    font-size: 1.2vw;
 }
 
 .position{
-    position: absolute; top: 30%; left: 35%;
+    position: absolute; top: 30%; left: 35%; right: 35%;
     z-index: 1;
 }
 
@@ -91,7 +97,7 @@ a{
 
 .text{
     color: white;
-    font-size: small;
-    margin-left: 25%;
+    font-size: 1.2vw;
+    margin-left: 20%;
     margin-top: 5%;
 }
