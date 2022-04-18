@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.backgroundpth {
+    z-index: -1;
+    max-width: 100%;
+}
+
+.backgroundforms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(17, 99, 99, 0.8);
+}
+
+.all {
+    position: relative;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.padding {
+    margin-bottom: 3%;
+}
+
+.input {
+    padding-left: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.33);
+    backdrop-filter: blur(25px);
+    border-radius: 31px;
+    border: none;
+    outline: none;
+}
+
+.button {
+    width: 433px;
+    height: 73px;
+    left: 538px;
+    top: 674px;
+    background: #137070;
+    box-shadow: 0px 4px 9px -3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 31px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.position{
+    position: absolute; top: 30%; left: 35%;
+    z-index: 1;
+}
+
+.positionlogo{
+    margin-left: 20%;
+    margin-bottom: 7%;
+}
+
+.text{
+    color: white;
+    font-size: small;
+    margin-left: 25%;
+    margin-top: 5%;
+}
