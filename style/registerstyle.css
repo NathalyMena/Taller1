@@ -56,8 +56,8 @@ a{
 
 .input {
     padding-left: 7%;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     width: 100%;
     background: rgba(196, 196, 196, 0.33);
     backdrop-filter: blur(25px);
@@ -71,8 +71,8 @@ a{
 
 .button {
     width: 100%;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     left: 538px;
     top: 674px;
     background: #137070;
@@ -86,18 +86,25 @@ a{
 }
 
 .position{
-    position: absolute; top: 30%; left: 35%; right: 35%;
+    position: absolute; top: 25%; left: 35%; right: 35%;
     z-index: 1;
 }
 
 .positionlogo{
-    margin-left: 20%;
-    margin-bottom: 7%;
+    margin-left: 31%;
+    margin-bottom: 2%;
 }
 
 .text{
     color: white;
     font-size: 1.2vw;
-    margin-left: 20%;
-    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 12%;
+
+  
+}
+
+.creatext{
+    color: white;
+    font-size: 3.4vw;
 }
