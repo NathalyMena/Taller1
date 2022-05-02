@@ -1,0 +1,20 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel ./register.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.7.0",
+    "lmbd": "^0.1.0",
+    "lmdb": "^2.3.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  },
+  "description": ""
+}

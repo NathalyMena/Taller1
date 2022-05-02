@@ -14,13 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <style> input::placeholder{ color:white; }</style>
+    <style>
+        input::placeholder {
+            color: white;
+        }
+    </style>
 
-    
+
 
 </head>
 
 <body>
+    <script src="./app.js" type="module"></script>
     <section class="all">
         <div>
             <img class="backgroundpth" src="./image/registerbg.png" alt="Background" width="100%">
@@ -28,20 +33,24 @@
 
             <div class="rectangle"></div>
 
-            <div class="position">
+            <div  class="position">
                 <ul><img class="padding positionlogo" src="./image/logo.png" alt="Logo" width="25%"></ul>
                 <h1 class="creatext">Crea una cuenta</h1>
-                <p class="text">¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p> 
-                <div class="padding" ><input class="input" type="name" name="name" placeholder="Tu nombre"></div>
-                <div class="padding" ><input class="input" type="email" name="password" placeholder="Correo electrónico"></div>
-                <div class="padding" ><input class="input" type="password" name="email" placeholder="Contraseña"></div>
-                <div class="padding" ><input class="input" type="password" name="password" placeholder="Confirma tu contraseña"></div>
-                <div class="padding" ><a href="#">
-                    <button class="button">Crear cuenta</button>
-                </a>
-            </div>              
+                <p class="text">¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
 
-           
+                <form id="createUserForm">
+                    <input class="input padding" type="name" name="name" placeholder="Tu nombre">
+                    <input class="input padding" type="email" name="email"placeholder="Correo electrónico">
+                    <input class="input padding" type="password" name="password" placeholder="Contraseña">                    
+                    
+                    <a href="#">
+                            <button class="button">Crear cuenta</button>
+                        </a>
+
+                </form>
+            </div>
+
+
         </div>
     </section>
 
