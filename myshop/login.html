@@ -14,17 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <style> input::placeholder{ color:white; }</style>
+    <style>
+        input::placeholder {
+            color: white;
+        }
+    </style>
 
-    
+
 
 </head>
 
 
 
 <body>
-   
-    
+    <script src="./login.js" type="module"></script>
+
     <section class="all">
         <div>
             <img class="backgroundpth" src="./image/logginbg.png" alt="Background" width="100%">
@@ -34,15 +38,20 @@
 
             <div class="position">
                 <ul><img class="padding positionlogo" src="./image/biglogo.png" alt="Logo" width="50%"></ul>
-                <div class="padding" ><input class="input" type="email" name="email" placeholder="Correo electrónico"></div>
-                <div class="padding" ><input class="input" type="password" name="password" placeholder="Contraseña"></div>
-                <div class="padding" ><a href="#">
-                    <button class="button">Iniciar sesión</button>
-                </a>
-                <p class="text">¿No tienes cuenta? <a href="#">Crea una</a></p> </div>
-                
 
+                <form id="loginForm">
+                    <input class="input padding" type="email" name="email" placeholder="Correo electrónico">
+                    <input class="input padding" type="password" name="password" placeholder="Contraseña">
+                    
+                    <div class="padding"><a href="#">
+                            <button class="button">Iniciar sesión</button>
+                        </a>
+                </form>
+                <p class="text">¿No tienes cuenta? <a href="#">Crea una</a></p>
             </div>
+
+
+        </div>
         </div>
     </section>
 

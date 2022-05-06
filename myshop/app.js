@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
+import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,6 +31,8 @@ createUserForm.addEventListener("submit", e => {
   createUser(name, email, password);
 });
 
+
+
 async function createUser(name, email, password){
 
   try {
@@ -46,6 +49,7 @@ async function createUser(name, email, password){
     }
 
   }
-
 }
+  
+
 

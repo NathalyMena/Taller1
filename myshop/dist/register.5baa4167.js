@@ -527,6 +527,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"igcvL":[function(require,module,exports) {
 // Import the functions you need from the SDKs you need
+var _util = require("@firebase/util");
 var _app = require("firebase/app");
 var _auth = require("firebase/auth");
 // TODO: Add SDKs for Firebase products that you want to use
@@ -561,7 +562,7 @@ async function createUser(name, email, password) {
     }
 }
 
-},{"firebase/app":"5wGMN","firebase/auth":"drt1f"}],"5wGMN":[function(require,module,exports) {
+},{"firebase/app":"5wGMN","firebase/auth":"drt1f","@firebase/util":"ePiK6"}],"5wGMN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _app = require("@firebase/app");
