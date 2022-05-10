@@ -20,6 +20,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
+
+
 const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", e => {
@@ -28,17 +30,22 @@ loginForm.addEventListener("submit", e => {
     const email = loginForm.email.value;
     const password = loginForm.password.value;
 
-    login( email, password);
+   // login( auth, email, password);
+   // if (user.isAdmin) {
+   //     location.href = "./createProduct.html";
+
+  //  }else {
+  //      location.href = "./products.html";
+    //}
 });
 
 
 async function login(email, password) {
     try {
-        const { user } = await signInWithEmailAndPassword(auth, email, password);
-        alert('Econet te da la bienvenida')
+        const {user}  = await signInWithEmailAndPassword(auth, email, password);
+        
     } catch (e) {
         alert("Correo o contraseña inválida");
 }
-
 
 }

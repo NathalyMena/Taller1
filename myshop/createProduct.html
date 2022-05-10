@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/hoja.png">
+    <title>Administrador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <form id="createProductForm">
+        <input type="text" name="name" placeholder="Nombre del producto">
+        <textarea name="description"></textarea>
+        <input type="number" name="price">
+        <select name="material">
+            <option value="cotton">Algodón</option>
+            <option value="ceramics">Carámica</option>
+            <option value="paperboard">Cartón</option>
+            <option value="plastic">Plástico</option>
+        </select>
+        <input type="file" name="images" accept=".png,.jpg,.jpeg">
+        <input type="submit" value="Crear producto">
+    </form>
+
+    <script src="./src/scripts/createProduct.js" type="module"></script>
+    
+</body>
+</html>

@@ -1,24 +1,14 @@
 // Import the functions you need from the SDKs you need
-import { async } from "@firebase/util";
+
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { doc, setDoc } from "firebase/firestore";
-import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
-
 
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBasLyACbbozQFnknmHsnNE5KiRegaotTc",
-  authDomain: "econet-28ee4.firebaseapp.com",
-  projectId: "econet-28ee4",
-  storageBucket: "econet-28ee4.appspot.com",
-  messagingSenderId: "127437720478",
-  appId: "1:127437720478:web:1756b263e6878cb202648f"
-};
+import firebaseConfig from "./src/utils/firebase";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -37,7 +27,8 @@ createUserForm.addEventListener("submit", async (e) => {
   const newUser = {
     name,
     email,
-    password
+    password,
+    isAdmin: false,
   }
 
  
