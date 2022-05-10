@@ -1,19 +1,6 @@
 
-
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
-
-import firebaseConfig from "../utils/firebase";
-
+import { storage, db } from "./apps";
 import { addProduct, uploadImages } from "./functions/addProduct";
-
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const storage = getStorage(app);
-
-
 
 const createProductForm = document.getElementById("createProductForm");
 
