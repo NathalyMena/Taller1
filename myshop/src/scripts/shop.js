@@ -1,5 +1,6 @@
 import {db} from "./apps";
 import { getProducts } from "./functions/products";
+import { currencyFormat } from "../utils";
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("material");
@@ -32,7 +33,7 @@ function renderProduct(item) {
     <div class="product__info"> 
         <h2 class="product__name"> ${item.name} </h2>
         <h3 class="material"> ${item.material} </h3>
-        <h3 class="price">  ${item.price} </h3>
+        <h3 class="price">  ${currencyFormat(item.price)} </h3>
 
     </div>`;
 

@@ -9,10 +9,11 @@ async function getProducts(db) {
         const products = docs.map((doc) =>{
             return {
                 ...doc.data(),
+                id: doc.id,
             };
         });
     
-        return products;
+        return products; 
     }catch(e){
         console.log(e);
     }
