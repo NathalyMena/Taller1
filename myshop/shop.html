@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
+    <label for="material">Por material</label>
+    <select name="material" id="material">
+        <option value="">Todos</option>
+        <option value="ceramics">Cerámica</option>
+        <option value="plastic">Plástico</option>
+        <option value="paperboard">Cartón</option>
+        <option value="cotton">Algodón</option>
+
+    </select>
+
+    <label for="order">Por precio</label>
+    <select name="order" id="order">
+        <option value="">Elige una opción</option>
+        <option value="asc">De mayor a menor</option>
+        <option value="desc">De menor a mayor</option>
+
+
+    </select>
+
     <section class="products" id="products">
-       <!-- <a class="product">
+        <!-- <a class="product">
             <img src="./image/image 9.png" alt="" class="product_image">
             <div class="product__info"> 
                 <h2 class="product__name"> Nombre </h2>
@@ -27,13 +48,19 @@
 
         </a>  -->
 
-        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
 
     </section>
 
     <script src="./src/scripts/shop.js" type="module"></script>
 
-    
+
 </body>
+
 </html>
