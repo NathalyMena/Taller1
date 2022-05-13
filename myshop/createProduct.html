@@ -16,11 +16,11 @@
 
 </head>
 
-<body >
+<body>
 
     <header class="navegation__block">
 
-        <section >
+        <section>
 
             <nav class="navegation__admin">
                 <div>
@@ -45,7 +45,7 @@
             <div>
                 <form id="createProductForm">
 
-                    <div >
+                    <div>
                         <h3>Nombre del producto</h3>
                         <p class="form__text"> Dale un título a tu producto para que los demás lo vean </p>
                         <input class="form" type="text" name="name" placeholder="Nombre del producto">
@@ -65,13 +65,12 @@
 
                     <div class="margin">
                         <h3>Sube la imagen</h3>
-                        <p class="form__text"> Escribe en pesos colombianos el valor del producto </p>
                         <input class="form" type="file" name="images" accept=".png,.jpg,.jpeg">
                     </div>
 
-                    <div class="margin form">
+                    <div class="margin">
                         <h3>Elige una material</h3>
-                        <select name="material">
+                        <select class="form" name="material">
                             <option value="cotton">Algodón</option>
                             <option value="ceramics">Cerámica</option>
                             <option value="paperboard">Cartón</option>
@@ -84,8 +83,10 @@
 
                 </form>
 
+                <div class="preview"></div>
+
                 <div>
-                    <input type="submit" value="Crear producto">
+                    <input class="btn" type="submit" value="Crear producto">
                 </div>
 
             </div>
@@ -94,12 +95,15 @@
 
     </section>
 
-    <footer>
-        <section>
-            <img src="./image/logo.png" alt="logo">
-            <p>Todos los derechos reservados</p>
-        </section>
-    </footer>
+    <section class="footer">
+
+        <footer>
+            <section class="footer__contain">
+                <img src="./image/logo.png" alt="logo">
+                <p class="footer__text">Todos los derechos reservados</p>
+            </section>
+        </footer>
+    </section>
 
     <script src="./src/scripts/createProduct.js" type="module"></script>
 

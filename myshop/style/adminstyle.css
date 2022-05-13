@@ -33,7 +33,7 @@ a {
     padding-left: 35%;
     color: #107676;
     font-weight: 500;
-    ;
+
 }
 
 .navegation__block {
@@ -75,21 +75,78 @@ h3 {
 
 .form {
     width: 40%;
-    height: 49px;
-    left: 115px;
-    top: 406px;
+    height: 49px;    
     margin-top: 0.7%;
     padding-left: 2%;
     border: 1px solid #137070;
     border-radius: 14px;
-    color: #B8B8B8;
+    color: #414040;
 }
 
-.margin{
+.margin {
     margin-top: 2%;
 }
 
-.form-description{
+.form-description {
     padding-top: 1%;
-    font-family: monospace;
+}
+
+input {
+    border: none;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #137070;
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 3%;
+}
+
+.footer__contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__text {
+    padding-left: 30%;
+    color: #ffffff;
+    padding-top: 1%;
+}
+
+.btn {
+    width: 40%;
+    height: 49px;
+    
+    margin-top: 0.7%;
+    padding-left: 2%;
+    border-radius: 14px;
+    color: #ffffff;
+    background: #137070;
+    box-shadow: -11px 4px 9px rgba(0, 0, 0, 0.15);
+
+    
+    position: absolute;
+    top: 110%;
+    left: 53%;
+    
+
+}
+
+.preview{
+
+    position: absolute;
+    width: 40%;
+    height: 450px;
+    left: 800px;
+    top: 347px;
+    
+    border: 1px solid #007A7A;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+    
+
 }
