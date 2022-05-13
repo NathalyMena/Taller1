@@ -24,7 +24,7 @@ function renderProduct(item) {
     const product = document.createElement("a");
     product.className = "product";
 
-    product.setAttribute("href", `./product.html?id={item.id}`)
+    product.setAttribute("href", './product.html?id='+item.id)
 
     const coverImage = item.images ? item.images[0] : "./image/noimage";
 
@@ -49,7 +49,9 @@ function filterBy(){
 
     if (newCategory !== ""){
 
-        filteredProducts = products.filter((product) => product.category === newCategory);    
+        filteredProducts = products.filter((product) => product.material === newCategory); 
+        console.log(filteredProducts);   
+        
         
     } else {
         filteredProducts = products;

@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navegation__admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.navegation__text {
+    padding-top: 1.8%;
+    padding-left: 35%;
+    color: #107676;
+    font-weight: 500;
+    ;
+}
+
+.navegation__block {
+
+    width: 100%;
+    z-index: -1;
+    background: #ffffff;
+    box-shadow: -11px 4px 9px rgba(0, 0, 0, 0.15);
+}
+
+.allform {
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+h2 {
+    color: #137070;
+}
+
+.line {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 90%;
+    background-color: #137070;
+    border: 0.5px solid #137070;
+    border-radius: 2px;
+
+}
+
+h3 {
+    color: #646464;
+    margin-bottom: 0.%;
+}
+
+.form__text {
+    font-size: 1vw;
+    color: #646464;
+}
+
+.form {
+    width: 40%;
+    height: 49px;
+    left: 115px;
+    top: 406px;
+    margin-top: 0.7%;
+    padding-left: 2%;
+    border: 1px solid #137070;
+    border-radius: 14px;
+    color: #B8B8B8;
+}
+
+.margin{
+    margin-top: 2%;
+}
+
+.form-description{
+    padding-top: 1%;
+    font-family: monospace;
+}

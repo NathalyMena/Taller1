@@ -1,12 +1,13 @@
-import { auth, db } from "./app";
+import { auth, db } from "../scripts/apps";
 import { onAuthStateChanged } from "firebase/auth";
-import { getFirebaseCart, createFirebaseCart } from "./functions/cart";
+import { getFirebaseCart, createFirebaseCart } from "./functions/functionCart.js";
 import { addProductToCart } from "../utils";
 import { getMyLocalCart, currencyFormat } from "../utils/index";
 
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("total");
 let cart = [];
+let userLogged;
 
 function loadCart(cart) {
     let total = 0;
@@ -23,7 +24,7 @@ async function removeProduct(productId) {
     
     cart = newCart;
 
-    if (userLogged) {
+    if (userLogged ) {
         await createFirebaseCart(db, userLogged.uid, newCart);
     }
 

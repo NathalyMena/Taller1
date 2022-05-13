@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./image/hoja.png">
+    <link rel="stylesheet" href="/style/adminstyle.css">
     <title>Administrador</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,22 +15,94 @@
         rel="stylesheet">
 
 </head>
-<body>
-    <form id="createProductForm">
-        <input type="text" name="name" placeholder="Nombre del producto">
-        <textarea name="description"></textarea>
-        <input type="number" name="price">
-        <select name="material">
-            <option value="cotton">Algodón</option>
-            <option value="ceramics">Cerámica</option>
-            <option value="paperboard">Cartón</option>
-            <option value="plastic">Plástico</option>
-        </select>
-        <input type="file" name="images" accept=".png,.jpg,.jpeg">
-        <input type="submit" value="Crear producto">
-    </form>
+
+<body >
+
+    <header class="navegation__block">
+
+        <section >
+
+            <nav class="navegation__admin">
+                <div>
+                    <img class="logo" src="./image/logoVerde.png" alt="Logo">
+                </div>
+
+                <div class="navegation__text">
+                    <p>Eres Administrador │ <a href="./shop.html">Tu tienda</a> </p>
+
+                </div>
+
+            </nav>
+
+        </section>
+    </header>
+
+    <section>
+        <div class="allform">
+            <h2>Añade un producto</h2>
+            <div class="line"></div>
+
+            <div>
+                <form id="createProductForm">
+
+                    <div >
+                        <h3>Nombre del producto</h3>
+                        <p class="form__text"> Dale un título a tu producto para que los demás lo vean </p>
+                        <input class="form" type="text" name="name" placeholder="Nombre del producto">
+                    </div>
+
+                    <div class="margin">
+                        <h3>Descripción del producto</h3>
+                        <p class="form__text"> Relata un poco más sobre este prodrodcuto (medidas, por ejemplo) </p>
+                        <textarea class="form form-description" name="description" placeholder="Descripción"></textarea>
+                    </div>
+
+                    <div class="margin">
+                        <h3>Precio del producto</h3>
+                        <p class="form__text"> Escribe en pesos colombianos el valor del producto </p>
+                        <input class="form" type="number" name="price" placeholder="ej; $ 45.000">
+                    </div>
+
+                    <div class="margin">
+                        <h3>Sube la imagen</h3>
+                        <p class="form__text"> Escribe en pesos colombianos el valor del producto </p>
+                        <input class="form" type="file" name="images" accept=".png,.jpg,.jpeg">
+                    </div>
+
+                    <div class="margin form">
+                        <h3>Elige una material</h3>
+                        <select name="material">
+                            <option value="cotton">Algodón</option>
+                            <option value="ceramics">Cerámica</option>
+                            <option value="paperboard">Cartón</option>
+                            <option value="plastic">Plástico</option>
+                        </select>
+
+
+                    </div>
+
+
+                </form>
+
+                <div>
+                    <input type="submit" value="Crear producto">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <section>
+            <img src="./image/logo.png" alt="logo">
+            <p>Todos los derechos reservados</p>
+        </section>
+    </footer>
 
     <script src="./src/scripts/createProduct.js" type="module"></script>
-    
+
 </body>
+
 </html>

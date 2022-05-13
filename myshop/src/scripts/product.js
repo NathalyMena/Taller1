@@ -4,7 +4,7 @@ import { auth, db } from "./apps";
 import { getMyLocalCart, addProductToCart, currencyFormat } from "../utils";
 
 
-import { getFirebaseCart } from "./functions/cart";
+import { getFirebaseCart } from "./functions/functionCart";
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetsSection = document.getElementById("productAssets");
@@ -25,7 +25,7 @@ async function loadProduct() {
 
     const data = await getProduct(productId);
 
-
+    console.log(data)
     const product = {
         ...data,
         id: productId,
