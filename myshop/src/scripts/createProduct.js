@@ -1,4 +1,3 @@
-
 import { storage, db } from "./apps";
 import { addProduct, uploadImages } from "./functions/addProduct";
 

@@ -1,7 +1,6 @@
-// Import the functions you need from the SDKs you need
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -34,7 +33,7 @@ createUserForm.addEventListener("submit", async (e) => {
  
   const userCreated = await createUser(auth, newUser);
   console.log(userCreated);
-  await addUserToDatabase(db, userCreated.user.uid, newUser);
+  await addUserToDatabase(db, userCreated.uid, newUser);
 
   
 
@@ -71,8 +70,4 @@ async function addUserToDatabase(db, userId, userInfo) {
 
   }
 }
-
-
-
-
 

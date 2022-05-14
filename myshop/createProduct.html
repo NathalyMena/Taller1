@@ -14,6 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+        <style>
+            input::placeholder {
+                color: rgb(164, 164, 164);
+            }
+        </style>
+
 </head>
 
 <body>
@@ -44,50 +50,65 @@
 
             <div>
                 <form id="createProductForm">
+                    <div class="izq">
 
-                    <div>
-                        <h3>Nombre del producto</h3>
-                        <p class="form__text"> Dale un título a tu producto para que los demás lo vean </p>
-                        <input class="form" type="text" name="name" placeholder="Nombre del producto">
-                    </div>
+                        <div class="allform__flex">
 
-                    <div class="margin">
-                        <h3>Descripción del producto</h3>
-                        <p class="form__text"> Relata un poco más sobre este prodrodcuto (medidas, por ejemplo) </p>
-                        <textarea class="form form-description" name="description" placeholder="Descripción"></textarea>
-                    </div>
+                            <div>
+                                <h3>Nombre del producto</h3>
+                                <p class="form__text"> Dale un título a tu producto para que los demás lo vean </p>
+                                <input class="form" type="text" name="name" placeholder="Nombre del producto">
+                            </div>
 
-                    <div class="margin">
-                        <h3>Precio del producto</h3>
-                        <p class="form__text"> Escribe en pesos colombianos el valor del producto </p>
-                        <input class="form" type="number" name="price" placeholder="ej; $ 45.000">
-                    </div>
+                            <div class="margin">
+                                <h3>Descripción del producto</h3>
+                                <p class="form__text"> Relata un poco más sobre este prodrodcuto
+                                </p>
+                                <textarea class="form form-description" name="description"
+                                    placeholder="Descripción"></textarea>
+                            </div>
 
-                    <div class="margin">
-                        <h3>Sube la imagen</h3>
-                        <input class="form" type="file" name="images" accept=".png,.jpg,.jpeg">
-                    </div>
+                            <div class="margin">
+                                <h3>Precio del producto</h3>
+                                <p class="form__text"> Escribe en pesos colombianos el valor del producto </p>
+                                <input class="form" type="number" name="price" placeholder="ej; $ 45.000">
+                            </div>
 
-                    <div class="margin">
-                        <h3>Elige una material</h3>
-                        <select class="form" name="material">
-                            <option value="cotton">Algodón</option>
-                            <option value="ceramics">Cerámica</option>
-                            <option value="paperboard">Cartón</option>
-                            <option value="plastic">Plástico</option>
-                        </select>
+                            <div class="margin">
+                                <h3>Sube la imagen</h3>
+                                <div class="form__file" >
+                                    <p class="form__white">Clic aquí</p>
+                                    <input class="form file" type="file" name="images" accept=".png,.jpg,.jpeg" >
+                                </div>
+                            </div>
+
+                            <div class="margin select__phone">
+                                <h3>Elige una material</h3>
+                                <select class="form" name="material">
+                                    <option value="cotton">Algodón</option>
+                                    <option value="ceramics">Cerámica</option>
+                                    <option value="paperboard">Cartón</option>
+                                    <option value="plastic">Plástico</option>
+                                </select>
 
 
+                            </div>
+
+                        </div>
+
+                        <div class="der" >
+                            <div class="preview"> <img src="#" alt="" ></div>
+                            <input class="btn" type="submit" value="Crear producto">
+                            
+                        </div>
                     </div>
 
 
                 </form>
 
-                <div class="preview"></div>
 
-                <div>
-                    <input class="btn" type="submit" value="Crear producto">
-                </div>
+
+
 
             </div>
 
@@ -106,6 +127,8 @@
     </section>
 
     <script src="./src/scripts/createProduct.js" type="module"></script>
+
+
 
 </body>
 
