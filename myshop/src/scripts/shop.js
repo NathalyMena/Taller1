@@ -5,7 +5,7 @@ import { currencyFormat } from "../utils";
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("material");
 const orderFilter = document.getElementById("order");
-const orderName = document.getElementById("orderName");
+const orderName = document.getElementById("orderbyName");
 
 let products = [];
 
@@ -53,6 +53,7 @@ function filterBy() {
 
 
     let filteredProducts = [];
+    
 
     if (newCategory !== "") {
 
@@ -62,6 +63,7 @@ function filterBy() {
 
     } else {
         filteredProducts = products;
+        
 
     }
 
@@ -77,7 +79,7 @@ function filterBy() {
         filteredProducts = filteredProducts.sort((a, b) => b.name - a.name);
     }
     if (newName === "za") {
-        filteredProducts = filteredProducts.sort((a, b) => b.name - a.name);
+        filteredProducts = filteredProducts.sort((a, b) => a.name - b.name);
     }
 
 
@@ -102,5 +104,8 @@ orderName.addEventListener("change", e => {
     filterBy();
 })
 
+document.getElementById('firtslogin').onclick = function(){
+    alert('¡Inicia sesión primero! :D ');
+}
 
 loadProducts();
