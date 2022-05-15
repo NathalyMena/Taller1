@@ -2,15 +2,14 @@ import { onAuthStateChanged } from "firebase/auth";
 import { getProduct } from "./functions/getProduct";
 import { auth, db } from "./apps";
 import { getMyLocalCart, addProductToCart, currencyFormat } from "../utils";
-
-
-import { getFirebaseCart } from "./functions/functionCart";
+import { getFirebaseCart, createFirebaseCart } from "./functions/functionCart";
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetsSection = document.getElementById("productAssets");
 
 let userLogged = undefined;
 let cart = [];
+
 function getParam(param) {
 
     const url = window.location.search;
@@ -25,7 +24,7 @@ async function loadProduct() {
 
     const data = await getProduct(productId);
 
-    console.log(data)
+    
     const product = {
         ...data,
         id: productId,
@@ -50,8 +49,14 @@ function renderProduct(product) {
 
     productInfoSection.innerHTML =
         `<h1 class="product__name"> ${product.name} </h1>
-    <p class="product__description"> ${product.description} </p>
-    <h3 class="product__price"> ${currencyFormat(product.price)} </h3>
+    <p class="product__description"> ${product.description} <br>  <br> Cuando adquieres un de nuestros productos ecológicos, estás apoyando nuestras iniciativas 
+    para proteger nuestro entorno. El 50% de esta venta, será invertido directamente 
+    para fines de protección de especies en via de extinción </p>
+    <div class="price__modif"> 
+    <div class="price__title">
+     </h1> <h2>Total</h2> 
+    <p>Envío incluido</p> </div>  <h1 class="product__price"> ${currencyFormat(product.price)}</div> 
+
     ${productButtonCart}`;
     
     const productCartButton = document.querySelector(".product__cart");
@@ -67,10 +72,6 @@ function renderProduct(product) {
         productCartButton.setAttribute("disabled", true);
         productCartButton.innerText = "Producto añadido";
     });
-
-
-
-
 }
     
 
