@@ -13,7 +13,7 @@ createProductForm.addEventListener("submit", async (e) => {
     const images = createProductForm.images.files;
 
     let gallery = [];
-
+c
     if (images.length) {
         const uploadedImages = await uploadImages(storage, [...images]);
         

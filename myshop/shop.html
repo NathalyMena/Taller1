@@ -16,49 +16,129 @@
 </head>
 
 <body>
-    <label for="material">Por material</label>
-    <select name="material" id="material">
-        <option value="">Todos</option>
-        <option value="ceramics">Cerámica</option>
-        <option value="plastic">Plástico</option>
-        <option value="paperboard">Cartón</option>
-        <option value="cotton">Algodón</option>
 
-    </select>
+    <header class="navegation__block">
 
-    <label for="order">Por precio</label>
-    <select name="order" id="order">
-        <option value="">Elige una opción</option>
-        <option value="asc">De mayor a menor</option>
-        <option value="desc">De menor a mayor</option>
+        <section>
+
+            <nav class="navegation">
+                <div>
+                    <img class="logo" src="./image/logoVerde.png" alt="Logo">
+                </div>
+
+                <div class="navegation__text">
+                    <a class="navegation__pag" href="./index.html">Nosotros</a>
+                    <a class="navegation__pag" href="./index.html">Proyectos</a>
+                    <a class="navegation__here" href="#">Apóyanos</a>
+                </div>
+
+                <div class="navegation__icon">
+                    <img src="./image/usuario.png" alt="">
+                    <img class="icon__distance" src="./image/carrito.png" alt="">
+                </div>
+
+            </nav>
+
+        </section>
 
 
-    </select>
 
-    <section class="products" id="products">
-        <!-- <a class="product">
-            <img src="./image/image 9.png" alt="" class="product_image">
-            <div class="product__info"> 
-                <h2 class="product__name"> Nombre </h2>
-                <h3 class="material"> Plástico </h3>
-                <h3 class="price"> 13.000 </h3>
 
+    </header>
+
+    <section>
+
+
+        <div class="title">
+            <h2>Lista de productos</h2>
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="allproducts">
+
+            <div class="filters">
+
+                <h3 class="filters_text"> Filtros </h3>
+
+                <div class="filtes__material" >
+
+                    <label for="material">Por material</label> <br>
+                    <select class=" form" name="material" id="material">
+                        <option value="">Todos</option>
+                        <option value="ceramics">Cerámica</option>
+                        <option value="plastic">Plástico</option>
+                        <option value="paperboard">Cartón</option>
+                        <option value="cotton">Algodón</option>
+
+                    </select>
+
+                </div>
+
+                <div class="filtes__material" >
+
+                    <label for="order">Por precio</label> <br>
+                    <select  class="form" name="order" id="order">
+                        <option value="">Elige una opción</option>
+                        <option value="asc">De mayor a menor</option>
+                        <option value="desc">De menor a mayor</option>
+
+
+                    </select>
+
+                </div>
+
+                <div >
+
+                    <label for="orderName">De la A a la Z</label> <br>
+                    <select  class="form" name="orderName" id="orderName">
+                        <option value="">Elige una opción</option>
+                        <option value="az">De la A a la Z</option>
+                        <option value="za">De la Z a la A</option>
+
+
+                    </select>
+
+                </div>
             </div>
 
+            <section class="products" id="products">
 
-        </a>  -->
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+            </section>
         </div>
+
+
+
+        <script src="./src/scripts/shop.js" type="module"></script>
+
+
 
 
     </section>
 
-    <script src="./src/scripts/shop.js" type="module"></script>
+    <section class="footer">
+
+        <footer>
+            <section class="footer__contain">
+                <img src="./image/logo.png" alt="logo">
+                <p class="footer__text">Todos los derechos reservados</p>
+            </section>
+        </footer>
+    </section>
+
+
+
+
+
 
 
 </body>
