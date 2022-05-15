@@ -36,7 +36,14 @@ createUserForm.addEventListener("submit", async (e) => {
  
   await addUserToDatabase(db, userCreated.uid, newUser);
 
-  
+  alert(`Econet de la bienvenida`)
+
+  if (userCreated) {
+    location.href = "./shopLogin.html";
+
+}else {
+    location.href = "#";
+}
 
 });
 

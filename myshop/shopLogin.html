@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/hoja.png">
+    <link rel="stylesheet" href="./style/shopstyle.css">
+    <title>Tienda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navegation__block">
+
+        <section>
+
+            <nav class="navegation">
+                <div>
+                    <img class="logo" src="./image/logoVerde.png" alt="Logo">
+                </div>
+
+                <div class="navegation__text">
+                    <a class="navegation__pag" href="#">Nosotros</a>
+                    <a class="navegation__pag" href="#">Proyectos</a>
+                    <a class="navegation__here" href="#">Apóyanos</a>
+                </div>
+
+                <div class="navegation__icon">
+                    <img src="./image/exit.png"  alt="" >
+                    <a href="./cart.html"> <img src="./image/carrito.png"  id="oklogin" > </a>
+                    
+                    
+                </div>
+                
+
+            </nav>
+
+        </section>
+
+
+
+
+    </header>
+
+    <section>
+
+
+        <div class="title">
+            <h2>Lista de productos</h2>
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="allproducts">
+
+            <div class="filters">
+
+                <h3 class="filters_text"> Filtros </h3>
+
+                <div class="filtes__material" >
+
+                    <label for="material">Por material</label> <br>
+                    <select class=" form" name="material" id="material">
+                        <option value="">Todos</option>
+                        <option value="ceramics">Cerámica</option>
+                        <option value="plastic">Plástico</option>
+                        <option value="paperboard">Cartón</option>
+                        <option value="cotton">Algodón</option>
+
+                    </select>
+
+                </div>
+
+                <div class="filtes__material" >
+
+                    <label for="order">Por precio</label> <br>
+                    <select  class="form" name="order" id="order">
+                        <option value="">Elige una opción</option>
+                        <option value="asc">De mayor a menor</option>
+                        <option value="desc">De menor a mayor</option>
+
+
+                    </select>
+
+                </div>
+
+                <div class="filtes__material" >
+
+                    <label for="orderName">De la A a la Z</label> <br>
+                    <select  class="form" name="orderName" id="orderbyName">
+                        <option value="">Elige una opción</option>
+                        <option value="az">De la A a la Z</option>
+                        <option value="za">De la Z a la A</option>
+
+
+                    </select>
+
+                </div>
+            </div>
+
+            <section class="products" id="products">
+
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+
+            </section>
+        </div>
+
+
+
+        <script src="./src/scripts/shopLogin.js" type="module"></script>
+
+
+
+
+    </section>
+
+    <section class="footer">
+
+        <footer>
+            <section class="footer__contain">
+                <img src="./image/logo.png" alt="logo">
+                <p class="footer__text">Todos los derechos reservados</p>
+            </section>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

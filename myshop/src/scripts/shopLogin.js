@@ -103,8 +103,4 @@ orderName.addEventListener("change", e => {
     filterBy();
 })
 
-document.getElementById('firtslogin').onclick = function(){
-    alert('¡Inicia sesión primero! :D ');
-}
-
 loadProducts();
