@@ -2,6 +2,7 @@ import { db } from "./apps";
 import { getProducts } from "./functions/products";
 import { currencyFormat } from "../utils";
 
+
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("material");
 const orderFilter = document.getElementById("order");
