@@ -1,10 +1,11 @@
 {
   "name": "myshop",
   "version": "1.0.0",
-  "main": "app.js",
+  
   "scripts": {
     "dev": "parcel ./*.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "parcel build --public-url ./ ./*.html "
   },
   "author": "",
   "license": "ISC",
