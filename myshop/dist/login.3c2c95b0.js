@@ -526,7 +526,6 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"jZEa7":[function(require,module,exports) {
-// Import the functions you need from the SDKs you need
 var _util = require("@firebase/util");
 var _app = require("firebase/app");
 var _auth = require("firebase/auth");

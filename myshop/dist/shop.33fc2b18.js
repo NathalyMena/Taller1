@@ -544,7 +544,6 @@ async function loadProducts() {
 }
 function renderProduct(item) {
     const product = document.createElement("a");
-    alert("Correo o contraseña inválida");
     product.className = "product";
     product.setAttribute("href", './product.html?id=' + item.id);
     const coverImage = item.images ? item.images[0] : "./image/noimage";
@@ -597,7 +596,61 @@ document.getElementById('firtslogin').onclick = function() {
 };
 loadProducts();
 
-},{"./apps":"kZ893","./functions/products":"6M4Yj","../utils":"jxTvD"}],"kZ893":[function(require,module,exports) {
+},{"../utils":"jxTvD","./apps":"kZ893","./functions/products":"6M4Yj"}],"jxTvD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addProductToCart", ()=>addProductToCart
+);
+parcelHelpers.export(exports, "getMyLocalCart", ()=>getMyLocalCart
+);
+parcelHelpers.export(exports, "currencyFormat", ()=>currencyFormat
+);
+async function addProductToCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+function getMyLocalCart() {
+    const myCart = localStorage.getItem("cart");
+    return myCart ? JSON.parse(myCart) : [];
+}
+function currencyFormat(price) {
+    return new Intl.NumberFormat("es-CO", {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+    }).format(price);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"kZ893":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "app", ()=>app
@@ -3622,37 +3675,7 @@ function indicator(i) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"fZmft":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fZmft":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LogLevel", ()=>LogLevel
@@ -36287,30 +36310,6 @@ async function getProducts(db) {
     }
 }
 
-},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jxTvD":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addProductToCart", ()=>addProductToCart
-);
-parcelHelpers.export(exports, "getMyLocalCart", ()=>getMyLocalCart
-);
-parcelHelpers.export(exports, "currencyFormat", ()=>currencyFormat
-);
-async function addProductToCart(cart) {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-function getMyLocalCart() {
-    const myCart = localStorage.getItem("cart");
-    return myCart ? JSON.parse(myCart) : [];
-}
-function currencyFormat(price) {
-    return new Intl.NumberFormat("es-CO", {
-        style: 'currency',
-        currency: 'COP',
-        minimumFractionDigits: 0
-    }).format(price);
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7yEow","kYXX8"], "kYXX8", "parcelRequirede3a")
+},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7yEow","kYXX8"], "kYXX8", "parcelRequirede3a")
 
 //# sourceMappingURL=shop.33fc2b18.js.map

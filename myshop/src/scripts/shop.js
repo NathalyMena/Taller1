@@ -25,7 +25,7 @@ async function loadProducts() {
 function renderProduct(item) {
     const product = document.createElement("a");
     
-    alert("Correo o contraseña inválida");
+   
 
 
 
