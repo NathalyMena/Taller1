@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navegation {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  display: flex;
+}
+
+.navegation__text {
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 10%;
+  padding-top: 1.8%;
+}
+
+.navegation__pag {
+  color: #168282;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.navegation__here {
+  color: #168282;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: 700;
+}
+
+.navegation__block {
+  width: 100%;
+  z-index: -1;
+  background: #fff;
+  box-shadow: -11px 4px 9px #00000026;
+}
+
+.navegation__icon {
+  width: 20%;
+}
+
+h2 {
+  color: #137070;
+}
+
+.line {
+  width: 100%;
+  background-color: #137070;
+  border: .5px solid #137070;
+  border-radius: 2px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.allinformation {
+  flex-direction: column;
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right: 10%;
+  display: flex;
+}
+
+.product {
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  border-radius: 42px;
+  flex-direction: row;
+  margin-bottom: 5%;
+  display: flex;
+  box-shadow: 0 4px 9px #00000026;
+}
+
+.product__image {
+  width: 30%;
+  padding: 5%;
+}
+
+.product__name {
+  color: #646464;
+  margin-bottom: 5%;
+  padding-top: 25%;
+  font-size: medium;
+}
+
+.product__price {
+  color: #646464;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.product__delete {
+  width: 100%;
+  height: 41px;
+  background: #fff;
+  border: 1px solid #137070;
+  border-radius: 14px;
+  margin-top: 10%;
+  padding-left: 2%;
+}
+
+h3 {
+  color: #646464;
+}
+
+.form {
+  width: 100%;
+  height: 49px;
+  color: #414040;
+  border: 1px solid #137070;
+  border-radius: 14px;
+  margin-top: .7%;
+  padding-left: 2%;
+}
+
+.all__elements {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  display: flex;
+}
+
+.totalp {
+  color: #168282;
+  padding-left: 70%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.allproduct {
+  width: 100%;
+}
+
+.allform {
+  width: 100%;
+  margin-left: 10%;
+}
+
+.product__info {
+  padding-bottom: 4%;
+}
+
+.marginform {
+  margin-bottom: 5%;
+}
+
+.totaltext {
+  color: #646464;
+  margin-top: 10%;
+  padding-left: 70%;
+  font-weight: 500;
+}
+
+.line2 {
+  width: 100%;
+  background: #137070;
+  border: 1px solid #137070;
+  border-radius: 11px;
+  margin-top: 5%;
+}
+
+input {
+  border: none;
+  text-decoration: none;
+}
+
+.button {
+  width: 40%;
+  height: 49px;
+  color: #414040;
+  background: #fff;
+  border: 1px solid #137070;
+  border-radius: 14px;
+  margin-top: 4%;
+  padding-left: 2%;
+}
+
+.button1 {
+  width: 54%;
+  height: 49px;
+  color: #fff;
+  background: #137070;
+  border: 1px solid #137070;
+  border-radius: 14px;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+
+.footer {
+  background-color: #137070;
+  margin-top: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 6%;
+}
+
+.footer__contain {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.footer__text {
+  color: #fff;
+  padding-top: 1%;
+  padding-left: 30%;
+  font-size: small;
+}
+
+@media only screen and (max-width: 420px) {
+  .navegation__text {
+    display: none;
+  }
+
+  .navegation__icon {
+    flex-direction: row;
+    margin-right: 6%;
+    padding-left: 45%;
+    display: flex;
+  }
+
+  .allinformation {
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 6%;
+    margin-right: 10%;
+    display: flex;
+  }
+
+  .all__elements {
+    flex-direction: column-reverse;
+  }
+
+  .allform {
+    margin-left: 0%;
+  }
+
+  .totalp {
+    padding-left: 0%;
+  }
+
+  .footer {
+    background-color: #137070;
+    margin-top: 10%;
+    padding: 15% 6%;
+  }
+
+  .product {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .product__image {
+    width: 50%;
+  }
+
+  .totaltext {
+    padding-left: 0%;
+  }
+
+  .button1 {
+    width: 48%;
+  }
+
+  .button {
+    width: 45%;
+  }
+}
+
+/*# sourceMappingURL=cart.d18d8e5b.css.map */

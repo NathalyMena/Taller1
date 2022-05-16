@@ -103,4 +103,57 @@ a {
   font-size: 1.2vw;
 }
 
+.backgroundpn {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  .backgroundpth {
+    display: none;
+  }
+
+  .backgroundpn {
+    width: 100%;
+  }
+
+  .backgroundforms {
+    display: none;
+  }
+
+  .positionlogo {
+    width: 50%;
+  }
+
+  .input {
+    padding: 10%;
+    font-size: medium;
+  }
+
+  .all {
+    width: 100%;
+  }
+
+  .button {
+    font-size: medium;
+  }
+
+  .text {
+    margin-left: 10%;
+    font-size: medium;
+  }
+
+  a {
+    font-size: medium;
+  }
+
+  .position {
+    width: 80%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
 /*# sourceMappingURL=login.f62f33b4.css.map */

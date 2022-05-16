@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "firebase": "^9.7.0",
+    "gh-pages": "^4.0.0",
     "lmbd": "^0.1.0",
-    "lmdb": "^2.3.7"
+    "lmdb": "^2.3.7",
+    "node-github-pages": "^0.1.1"
   },
   "devDependencies": {
     "parcel": "^2.5.0",
