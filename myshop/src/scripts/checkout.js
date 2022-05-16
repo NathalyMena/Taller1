@@ -1,46 +1,25 @@
+import { db } from "./apps";
+import { doc, getDoc } from "firebase/firestore";
 
 
+async function getUser(id) {
 
+    const docRef = doc(db, "users", id);
 
-//para visualizar el precio total y con envio en la otra pagina (payment) 
+    try {
 
+        const docSnap = await getDoc(docRef);
+        const user = docSnap.data();
+        console.log(user)
+        document.getElementById("nombreUsuario").innerText=user.name;
 
-renderTotal = () =>{
-cart.forEach((data) => {
-    totalPrice += data.precio; 
-});
-    if(totalPrice > 0){
-        const ordenCheck = document.createElement('section');
-        ordenCheck.innerHTML = `
-                <div class="orden__containtergnral">
-                <div class="orden__title">
-                    Tu Orden
-                </div>
-                <div class="orden__separaddor"> </div>
-                <table class="orden__table">
-                    <tr>
-                    <td>Subtotal</td>
-                    <td >$ ${totalPrice}</td>
-                    </tr>
-                    <tr>
-                    <td>Envio</td>
-                    <td >$ 11.000</td>
-                    </tr>
-                    <tr class="orden__TOTAL">
-                    <td>Total</td>
-                    <td >$ ${totalPrice + precioEnvio}</td>
-                    </tr>
-                    <tr>
-                </table>
-                </div>
-        `
-        ordenCheck.classList.add('orden');   
-        generalC.appendChild(ordenCheck);
-        total =totalPrice;
+        return user;
 
-    }else{
-        container.innerHTML = `
-        Aun no tienes nada en tu carrito
-        `
+    }catch(e){
+        console.log(e);
     }
 }
+
+
+const id = localStorage.getItem("idUser");
+getUser(id);
