@@ -114,6 +114,8 @@ h2 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.15);
     border-radius: 42px;
 
+    margin-bottom: 5%;
+
 
 
 }
@@ -192,6 +194,7 @@ h3 {
 
 .allproduct {
     width: 100%;
+    
 }
 
 .allform {
