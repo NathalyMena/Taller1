@@ -41,10 +41,19 @@ function renderProduct(product) {
     const productCart = document.createElement("li");
     productCart.className = "product";
     productCart.innerHTML = `
-    <img src="${product.images[0]}" class="product__image">
-    <h2 class="product__name">${product.name}</h2>
+
+    
+    <img src="${product.images[0]}" class="product__image"> 
+    <div class ="product__info"> <h3 class="product__name">${product.name}</h3>
     <h3 class="product__price">${currencyFormat(product.price)}</h3>
-    <button class="product__delete">Eliminar producto</button>
+    <div>  <button class="product__delete">Eliminar producto</button> </div>
+     </div>
+     
+
+
+    
+    
+    
     `;
 
     cartSection.appendChild(productCart);
