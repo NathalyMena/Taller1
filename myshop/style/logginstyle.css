@@ -101,3 +101,56 @@ a{
     margin-left: 20%;
     margin-top: 5%;
 }
+
+@media only screen and (max-width: 420px) {
+
+    .backgroundpth{
+        display: none;
+
+    }
+    .backgroundpn{
+        width: 100%;
+    }
+    .backgroundforms{
+        display: none;
+    }
+    .positionlogo{
+        width: 50%;
+    }
+
+    .input{
+       font-size: medium;
+       padding: 10%;
+       padding-left: 10%;
+       
+    }
+
+    .all{
+        width: 100%;
+    }
+
+    .button{
+        font-size: medium;
+    }
+
+    .text{
+        font-size: medium;
+        margin-left: 10%;
+
+    }
+
+    a{
+        font-size: medium;
+    }
+
+    .position {
+        width: 80%;
+        margin-right: 10%;
+        position: absolute; top: 20%; left: 10%; right: 10%;
+    };
+
+    
+
+    
+}
+

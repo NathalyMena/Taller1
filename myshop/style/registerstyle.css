@@ -108,3 +108,60 @@ a{
     color: white;
     font-size: 3.4vw;
 }
+
+@media only screen and (max-width: 420px) {
+
+    .backgroundpth{
+        display: none;
+    }
+
+    .backgroundpn{
+        width: 100%;
+    }
+
+    .backgroundforms{
+        display: none;
+    }
+
+    .position{
+        width: 80%;
+        margin-right: 10%;
+        position: absolute; top: 20%; left: 10%; right: 10%;
+    }
+
+    .input{
+        font-size: medium;
+        padding: 10%;
+        padding-left: 10%;
+        
+     }
+
+     .button{
+        font-size: medium;
+    }
+
+    .creatext{
+        font-size: medium;
+        margin-left: 25%;
+    }
+
+    .text{
+        font-size: medium;
+        margin-left: 0%;
+    }
+
+    a{
+        font-size: medium;
+    }
+
+    .positionlogo{
+        width: 45%;
+        margin-left: 20%;
+    }
+
+
+
+
+
+
+}
