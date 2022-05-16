@@ -194,7 +194,7 @@ h3 {
 
 .allproduct {
     width: 100%;
-    
+
 }
 
 .allform {
@@ -221,8 +221,8 @@ h3 {
     width: 100%;
 
     margin-top: 5%;
-    
-    
+
+
     background: #137070;
 
     border: 1px solid #137070;
@@ -234,7 +234,7 @@ input {
     text-decoration: none;
 }
 
-.button{
+.button {
 
     width: 40%;
     height: 49px;
@@ -248,7 +248,7 @@ input {
 
 }
 
-.button1{
+.button1 {
 
     width: 54%;
     height: 49px;
@@ -264,14 +264,6 @@ input {
     margin-bottom: 10%;
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -296,4 +288,78 @@ input {
     color: #ffffff;
     padding-top: 1%;
     font-size: small;
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    .navegation__text {
+        display: none;
+    }
+
+    .navegation__icon {
+        display: flex;
+        flex-direction: row;
+        margin-right: 6%;
+        padding-left: 45%;
+    }
+
+    .allinformation {
+        margin-top: 15%;
+        margin-left: 6%;
+        margin-right: 10%;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .all__elements {
+        flex-direction: column-reverse;
+    }
+
+    .allform {
+        margin-left: 0%;
+    }
+
+    .totalp {
+        padding-left: 0%;
+    }
+
+    .footer {
+        background-color: #137070;
+        padding-left: 6%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        margin-top: 10%;
+        padding-right: 6%;
+    }
+
+    .product{
+       margin-bottom: 15%;
+       margin-top: 15%;
+    }
+
+
+    .product__image{
+        width: 50%;
+    }
+
+    .totaltext{
+        padding-left: 0%;
+    }
+
+    .button1{
+        width: 48%;
+
+    }
+
+    .button{
+        width: 45%;
+    }
+
+
+
+
+
 }
