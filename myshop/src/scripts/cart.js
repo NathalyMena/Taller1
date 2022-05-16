@@ -81,3 +81,35 @@ onAuthStateChanged(auth, async (user) => {
     loadCart(cart);
 
   });
+
+const payForm = document.querySelector('.payForm');
+let total;
+
+payForm.addEventListener('submit', (event)=>{
+    event.preventDefault();
+
+    const productIds = [];
+    cart.forEach((data)=>{
+        productIds.push(data.id);
+    });
+
+    const order = {
+        nombre: payForm.userName.value,        
+        numDoc: payForm.userCC.value,
+        direccion: payForm.userAdress.value,
+       
+    }
+
+    ORDERS_COLLECTION.add(order)
+    .then((docRef)=>{
+        console.log(docRef.id);
+        
+        CART_COLLECTION.doc(loggedUser.uid).set({
+            cart: [],
+        });
+        location.href = './thanks.html';
+    });
+    
+    console.log(order);
+
+})
