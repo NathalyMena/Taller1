@@ -553,7 +553,7 @@ createUserForm.addEventListener("submit", async (e)=>{
     };
     const userCreated = await createUser(auth, newUser);
     await addUserToDatabase(db, userCreated.uid, newUser);
-    alert("Econet de la bienvenida");
+    alert(`Econet de la bienvenida`);
     if (userCreated) location.href = "./shopLogin.html";
     else location.href = "#";
 });
